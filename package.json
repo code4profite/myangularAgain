@@ -1,0 +1,43 @@
+{
+  "name": "myangular",
+  "version": "0.1.0",
+  "description": "my own angularjs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start",
+    "lint": "jshint src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code4profite/myangular.git"
+  },
+  "author": "sheratsuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code4profite/myangular/issues"
+  },
+  "homepage": "https://github.com/code4profite/myangular#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "jasmine-core": "^4.5.0",
+    "jshint": "^2.13.6",
+    "karma": "^6.4.1",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine": "^5.1.0",
+    "karma-jshint-preprocessor": "0.0.6",
+    "karma-junit-reporter": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "sinon": "^15.0.1",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "lodash": "^4.17.21"
+  }
+}
