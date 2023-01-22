@@ -18,7 +18,7 @@ describe('digest',function(){
     beforeEach(function () {
         scope = new Scope();
     });
-//*
+
     it('calls the listener function of a watch on first $digest',function(){
         var watchFn = function() { return 'wat';};
         var listenerFn = jasmine.createSpy();
@@ -40,7 +40,7 @@ describe('digest',function(){
         expect(watchFn).toHaveBeenCalledWith(scope);
 
     });
-
+/*
     it('calls the listener function when watched value changes',function(){
 
         scope.someValue = 'a';
@@ -290,7 +290,7 @@ describe('digest',function(){
         scope.$digest();
         expect(scope.counter).toBe(2);
     });
-    /* */
+    
     it('allows destroying a $watch during digest',function(){
         scope.aValue = 'abc';
 

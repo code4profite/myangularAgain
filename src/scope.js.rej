@@ -1,0 +1,39 @@
+diff a/src/scope.js b/src/scope.js	(rejected hunks)
+@@ -1,8 +1,8 @@
+ var _ = require('lodash');
+ 
+ function Scope() {
+-    this.$$watchers = Array();
+-};
++    this.$$watchers = [];
++}
+ module.exports = Scope;
+ 
+ Scope.prototype.$watch = function (watchFn,listenerFn) {
+@@ -10,11 +10,19 @@
+         watchFn:watchFn,
+         listenerFn:listenerFn
+     };
+-    Scope.$$watchers.push(watcher);
++    this.$$watchers.push(watcher);
+ };
+ 
+ Scope.prototype.$digest = function () {
+-    _.forEach(this.$$watchers,function (watch) {
+-        watch.listenerFn();
+-    })
+-}
+\ No newline at end of file
++    var self= this;
++    var oldValue, newValue;
++    _.forEach(this.$$watchers,function (watcher) {
++        newValue = watcher.watchFn(self);
++        oldValue = watcher.last;        
++        if(oldValue!==newValue){
++            watcher.last = newValue;
++            watcher.listenerFn(newValue,oldValue,self);
++        }
++
++    });
++};
+\ No newline at end of file
