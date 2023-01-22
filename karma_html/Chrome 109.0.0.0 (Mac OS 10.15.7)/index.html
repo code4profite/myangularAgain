@@ -117,72 +117,11 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   
-    <div class="suite passed">
-      <span class="description">Scope</span>
-    
-      <div class="specSummary passed">
-      <span class="description">can be constructed and used as an object</span>
-      </div>
-    
-    </div>
-  
     <div class="suite failed">
       <span class="description">digest</span>
     
       <div class="specSummary failed">
-      <span class="description">does not end digest so that new watches are not run</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">catches exceptions in watch function and continues</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the listener function when watched value changes</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">compares based on value if enabled</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the watch function with the scope as the argument</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">catches exceptions in listeners function and continues</span>
-      </div>
-    
-      <div class="specSummary failed">
       <span class="description">calls listener with new value as old value the first time</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls listener when watch value is first undefined</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">allows a $watch to destroy another during digest</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">triggers chained watchers in the same digest</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">correcly handles NanNs</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">may have watchers that omit the listener function</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">allows destroying a $watch with a removal function</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">ends the digest when the last watch is clean</span>
       </div>
     
       <div class="specSummary failed">
@@ -190,11 +129,72 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
       </div>
     
       <div class="specSummary failed">
+      <span class="description">may have watchers that omit the listener function</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">allows a $watch to destroy another during digest</span>
+      </div>
+    
+      <div class="specSummary failed">
       <span class="description">allows destroying a $watch during digest</span>
       </div>
     
       <div class="specSummary failed">
+      <span class="description">allows destroying a $watch with a removal function</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">catches exceptions in listeners function and continues</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">ends the digest when the last watch is clean</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">catches exceptions in watch function and continues</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">correcly handles NanNs</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">compares based on value if enabled</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls the listener function when watched value changes</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">does not end digest so that new watches are not run</span>
+      </div>
+    
+      <div class="specSummary failed">
       <span class="description">calls the listener function of a watch on first $digest</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls listener when watch value is first undefined</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">triggers chained watchers in the same digest</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls the watch function with the scope as the argument</span>
+      </div>
+    
+    </div>
+  
+    <div class="suite passed">
+      <span class="description">Scope</span>
+    
+      <div class="specSummary passed">
+      <span class="description">can be constructed and used as an object</span>
       </div>
     
     </div>
@@ -206,130 +206,11 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   <div class="specDetail failed">
-    <span class="description">digest does not end digest so that new watches are not run</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17402:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest catches exceptions in watch function and continues</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17461:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the listener function when watched value changes</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17272:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest compares based on value if enabled</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17423:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the watch function with the scope as the argument</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17259:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest catches exceptions in listeners function and continues</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17480:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
     <span class="description">digest calls listener with new value as old value the first time</span>
     <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17310:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls listener when watch value is first undefined</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17296:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest allows a $watch to destroy another during digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17554:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest triggers chained watchers in the same digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17332:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest correcly handles NanNs</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17443:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest may have watchers that omit the listener function</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17321:15)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest allows destroying a $watch with a removal function</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17499:33)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest ends the digest when the last watch is clean</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17380:19
-    at baseTimes (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:992:23)
-    at Function.times (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:16221:20)
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17379:11)
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17323:15)
     at &lt;Jasmine&gt;</div>
     </div>
   </div>
@@ -337,8 +218,29 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   <div class="specDetail failed">
     <span class="description">digest gives up on the watches after 10 iterations</span>
     <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17361:15)
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17374:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest may have watchers that omit the listener function</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17334:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest allows a $watch to destroy another during digest</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17567:15)
     at &lt;Jasmine&gt;</div>
     </div>
   </div>
@@ -346,8 +248,92 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   <div class="specDetail failed">
     <span class="description">digest allows destroying a $watch during digest</span>
     <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17522:15)
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17535:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest allows destroying a $watch with a removal function</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17512:33)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest catches exceptions in listeners function and continues</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17493:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest ends the digest when the last watch is clean</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17393:19
+    at baseTimes (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:992:23)
+    at Function.times (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:16221:20)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17392:11)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest catches exceptions in watch function and continues</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17474:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest correcly handles NanNs</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17456:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest compares based on value if enabled</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17436:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls the listener function when watched value changes</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17285:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest does not end digest so that new watches are not run</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17415:15)
     at &lt;Jasmine&gt;</div>
     </div>
   </div>
@@ -355,8 +341,39 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   <div class="specDetail failed">
     <span class="description">digest calls the listener function of a watch on first $digest</span>
     <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope.$watch is not a function
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/cd5c18729ae31e0fd05e3fc9174585f9.browserify.js?aa160c13e286fde7c13f3b8097991446829f1614:17248:15)
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17261:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls listener when watch value is first undefined</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17309:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest triggers chained watchers in the same digest</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17345:15)
+    at &lt;Jasmine&gt;</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls the watch function with the scope as the argument</span>
+    <div class="stackTrace">
+      <div class="resultMessage">TypeError: Cannot read properties of undefined (reading 'push')
+    at Scope.$watch (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:22)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17272:15)
     at &lt;Jasmine&gt;</div>
     </div>
   </div>
