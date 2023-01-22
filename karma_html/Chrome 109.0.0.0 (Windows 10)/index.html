@@ -99,14 +99,11 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
-<span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>5 specs, 1 failed, 0 pending</span>
-<span class="resultsMenu bar">
-<a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
-   class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
-</span>
 
+  
+  <span class="passingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
+  <a href="#" onclick="unfold();">Unfold</a></span>6 specs, 0 failed, 0 pending</span>
+  
 
 
 </div>
@@ -118,16 +115,11 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
     <div class="suite passed">
-      <span class="description">Scope</span>
+      <span class="description">digest</span>
     
       <div class="specSummary passed">
-      <span class="description">can be constructed and used as an object</span>
+      <span class="description">calls the listener function when watched value changes</span>
       </div>
-    
-    </div>
-  
-    <div class="suite failed">
-      <span class="description">digest</span>
     
       <div class="specSummary passed">
       <span class="description">calls the watch function with the scope as the argument</span>
@@ -137,12 +129,21 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
       <span class="description">calls the listener function of a watch on first $digest</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">calls listener when watch value is first undefined</span>
+      <div class="specSummary passed">
+      <span class="description">calls listener with new value as old value the first time</span>
       </div>
     
       <div class="specSummary passed">
-      <span class="description">calls the listener function when watched value changes</span>
+      <span class="description">calls listener when watch value is first undefined</span>
+      </div>
+    
+    </div>
+  
+    <div class="suite passed">
+      <span class="description">Scope</span>
+    
+      <div class="specSummary passed">
+      <span class="description">can be constructed and used as an object</span>
       </div>
     
     </div>
@@ -151,18 +152,6 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </div>
 
 <div id="details">
-  
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls listener when watch value is first undefined</span>
-    <div class="stackTrace">
-      <div class="resultMessage">Expected 0 to be 1.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/a0d6d65e0c6759dc097c5f66ed15f3d1.browserify.js?75a6ab58d87c221c6c54f7dcd8f7100aa2c4d50a:17326:31)
-    at &lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
   
 </div>
 
@@ -175,7 +164,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    case 50: showFailures(); break;
+    
   }
 };
 

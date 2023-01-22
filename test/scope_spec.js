@@ -79,7 +79,7 @@ describe('digest',function(){
         expect(scope.counter).toBe(1);
 
     });
-/*
+
     it('calls listener with new value as old value the first time',function(){
         scope.someValue = 123;
         var OldValueGiven;
@@ -92,7 +92,7 @@ describe('digest',function(){
         scope.$digest();
         expect(OldValueGiven).toBe(123);
     });
-
+/*
     it('may have watchers that omit the listener function',function(){
         var watchFn = jasmine.createSpy().and.returnValue('something');
         scope.$watch(watchFn);
