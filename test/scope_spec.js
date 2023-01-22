@@ -40,7 +40,7 @@ describe('digest',function(){
         expect(watchFn).toHaveBeenCalledWith(scope);
 
     });
-/*
+
     it('calls the listener function when watched value changes',function(){
 
         scope.someValue = 'a';
@@ -79,7 +79,7 @@ describe('digest',function(){
         expect(scope.counter).toBe(1);
 
     });
-
+/*
     it('calls listener with new value as old value the first time',function(){
         scope.someValue = 123;
         var OldValueGiven;

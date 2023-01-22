@@ -1,8 +1,11 @@
 var _ = require('lodash');
 
+var initWatchVal = function(){}
+
 function Scope() {
     this.$$watchers = [];
-};
+    this.last = initWatchVal;
+}
 module.exports = Scope;
 
 Scope.prototype.$watch = function (watchFn,listenerFn) {
@@ -24,5 +27,5 @@ Scope.prototype.$digest = function () {
             watcher.listenerFn(newValue,oldValue,self);
         }
         
-    })
+    });
 }
