@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Firefox 108.0 (Windows 10)</title>
+<title>Firefox 109.0 (Windows 10)</title>
 <style>
 body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 #HTMLReporter h1 { font-size: 12px; font-weight: normal; text-align: right; margin: 10px 0 10px 0 !important; }
@@ -94,19 +94,16 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </head>
 
 <body id="HTMLReporter" class="html-reporter">
-<h1>Tested in Firefox 108.0 (Windows 10) on Sun Jan 22 2023</h1>
+<h1>Tested in Firefox 109.0 (Windows 10) on Sun Jan 22 2023</h1>
 
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
-<span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>4 specs, 1 failed, 0 pending</span>
-<span class="resultsMenu bar">
-<a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
-   class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
-</span>
 
+  
+  <span class="passingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
+  <a href="#" onclick="unfold();">Unfold</a></span>4 specs, 0 failed, 0 pending</span>
+  
 
 
 </div>
@@ -118,16 +115,11 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
     <div class="suite passed">
-      <span class="description">Scope</span>
+      <span class="description">digest</span>
     
       <div class="specSummary passed">
-      <span class="description">can be constructed and used as an object</span>
+      <span class="description">calls the listener function when watched value changes</span>
       </div>
-    
-    </div>
-  
-    <div class="suite failed">
-      <span class="description">digest</span>
     
       <div class="specSummary passed">
       <span class="description">calls the watch function with the scope as the argument</span>
@@ -137,8 +129,13 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
       <span class="description">calls the listener function of a watch on first $digest</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">calls the listener function when watched value changes</span>
+    </div>
+  
+    <div class="suite passed">
+      <span class="description">Scope</span>
+    
+      <div class="specSummary passed">
+      <span class="description">can be constructed and used as an object</span>
       </div>
     
     </div>
@@ -147,22 +144,6 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </div>
 
 <div id="details">
-  
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the listener function when watched value changes</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: scope is undefined in http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33 (line 17290)
-require&lt;[&quot;C:\\Users\\dell\\Desktop\\app\\myangularAgain\\test\\scope_spec.js&quot;]&lt;/&lt;/&lt;/&lt;@http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33:17290:50
-require&lt;[&quot;C:\\Users\\dell\\Desktop\\app\\myangularAgain\\src\\scope.js&quot;]&lt;/Scope.prototype.$digest/&lt;@http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33:17236:15
-arrayEach@http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33:532:19
-forEach@http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33:9412:14
-require&lt;[&quot;C:\\Users\\dell\\Desktop\\app\\myangularAgain\\src\\scope.js&quot;]&lt;/Scope.prototype.$digest@http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33:17233:7
-require&lt;[&quot;C:\\Users\\dell\\Desktop\\app\\myangularAgain\\test\\scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absoluteC:/Users/dell/AppData/Local/Temp/870f8c1a9e6bd87357c5bb1aaaf0dfbb.browserify.js?058ceca05e43b83cb5d2c9779541224030111d33:17295:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
   
 </div>
 
@@ -175,7 +156,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    case 50: showFailures(); break;
+    
   }
 };
 
