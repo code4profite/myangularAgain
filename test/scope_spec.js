@@ -102,7 +102,7 @@ describe('digest',function(){
         expect(watchFn).toHaveBeenCalled();
 
     });
-/*
+
     it('triggers chained watchers in the same digest',function(){
         scope.name = 'Jane';
 
@@ -148,7 +148,7 @@ describe('digest',function(){
         expect(function(){scope.$digest();}).toThrow();
 
     });
-
+/*
     it('ends the digest when the last watch is clean',function(){
         scope.array = _.range(100);
         var watchExecutions = 0;

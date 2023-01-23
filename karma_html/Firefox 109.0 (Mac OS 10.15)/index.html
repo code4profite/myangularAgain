@@ -94,19 +94,16 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </head>
 
 <body id="HTMLReporter" class="html-reporter">
-<h1>Tested in Firefox 109.0 (Mac OS 10.15) on Sun Jan 22 2023</h1>
+<h1>Tested in Firefox 109.0 (Mac OS 10.15) on Mon Jan 23 2023</h1>
 
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 17 specs</span> -->
-<span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>18 specs, 17 failed, 0 pending</span>
-<span class="resultsMenu bar">
-<a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
-   class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
-</span>
 
+  
+  <span class="passingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
+  <a href="#" onclick="unfold();">Unfold</a></span>9 specs, 0 failed, 0 pending</span>
+  
 
 
 </div>
@@ -126,75 +123,39 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     
     </div>
   
-    <div class="suite failed">
+    <div class="suite passed">
       <span class="description">digest</span>
     
-      <div class="specSummary failed">
-      <span class="description">gives up on the watches after 10 iterations</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">ends the digest when the last watch is clean</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">allows a $watch to destroy another during digest</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the listener function of a watch on first $digest</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">catches exceptions in watch function and continues</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the watch function with the scope as the argument</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">catches exceptions in listeners function and continues</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the listener function when watched value changes</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">allows destroying a $watch with a removal function</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls listener when watch value is first undefined</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">allows destroying a $watch during digest</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">does not end digest so that new watches are not run</span>
-      </div>
-    
-      <div class="specSummary failed">
+      <div class="specSummary passed">
       <span class="description">calls listener with new value as old value the first time</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">compares based on value if enabled</span>
-      </div>
-    
-      <div class="specSummary failed">
+      <div class="specSummary passed">
       <span class="description">may have watchers that omit the listener function</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">correcly handles NanNs</span>
+      <div class="specSummary passed">
+      <span class="description">triggers chained watchers in the same digest</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">triggers chained watchers in the same digest</span>
+      <div class="specSummary passed">
+      <span class="description">gives up on the watches after 10 iterations</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls the listener function of a watch on first $digest</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls the watch function with the scope as the argument</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls listener when watch value is first undefined</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls the listener function when watched value changes</span>
       </div>
     
     </div>
@@ -203,181 +164,6 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </div>
 
 <div id="details">
-  
-  
-  <div class="specDetail failed">
-    <span class="description">digest gives up on the watches after 10 iterations</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17374:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest ends the digest when the last watch is clean</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17393:19
-baseTimes@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:992:23
-times@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:16221:29
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17392:11
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest allows a $watch to destroy another during digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17567:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the listener function of a watch on first $digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17261:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest catches exceptions in watch function and continues</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17474:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the watch function with the scope as the argument</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17272:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest catches exceptions in listeners function and continues</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17493:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the listener function when watched value changes</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17285:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest allows destroying a $watch with a removal function</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17512:33
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls listener when watch value is first undefined</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17309:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest allows destroying a $watch during digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17535:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest does not end digest so that new watches are not run</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17415:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls listener with new value as old value the first time</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17323:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest compares based on value if enabled</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17436:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest may have watchers that omit the listener function</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17334:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest correcly handles NanNs</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17456:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest triggers chained watchers in the same digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">TypeError: Scope.$$watchers is undefined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2 (line 17228)
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$watch@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17228:5
-require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js?9e542e068a816cf34ea01c038cf4942d0e93a7a2:17345:15
-&lt;Jasmine&gt;</div>
-    </div>
-  </div>
-  
   
 </div>
 
@@ -390,7 +176,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    case 50: showFailures(); break;
+    
   }
 };
 

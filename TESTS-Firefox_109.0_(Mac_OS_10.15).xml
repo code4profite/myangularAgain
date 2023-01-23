@@ -1,131 +1,17 @@
 <?xml version="1.0"?>
-<testsuite name="Firefox 109.0 (Mac OS 10.15)" package="" timestamp="2023-01-22T02:38:57" id="0" hostname="MacBook-Pro-de-sheratsuki.local" tests="18" errors="0" failures="17" time="0.007">
+<testsuite name="Firefox 109.0 (Mac OS 10.15)" package="" timestamp="2023-01-23T01:58:24" id="0" hostname="MacBook-Pro-de-sheratsuki.local" tests="9" errors="0" failures="0" time="0.003">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/109.0"/>
   </properties>
   <testcase name="Scope can be constructed and used as an object" time="0.002" classname="Firefox_109_0_(Mac_OS_10_15).Scope"/>
-  <testcase name="digest gives up on the watches after 10 iterations" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:138:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17374:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest ends the digest when the last watch is clean" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:157:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17393:19
-baseTimes@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/node_modules/lodash/lodash.js:990:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:992:23
-times@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/node_modules/lodash/lodash.js:16219:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:16221:29
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:156:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17392:11
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest allows a $watch to destroy another during digest" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:331:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17567:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest calls the listener function of a watch on first $digest" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:25:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17261:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest catches exceptions in watch function and continues" time="0.001" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:238:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17474:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest calls the watch function with the scope as the argument" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:36:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17272:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest catches exceptions in listeners function and continues" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:257:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17493:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest calls the listener function when watched value changes" time="0.001" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:49:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17285:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest allows destroying a $watch with a removal function" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:276:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17512:33
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest calls listener when watch value is first undefined" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:73:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17309:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest allows destroying a $watch during digest" time="0.001" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:299:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17535:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest does not end digest so that new watches are not run" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:179:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17415:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest calls listener with new value as old value the first time" time="0.001" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:87:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17323:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest compares based on value if enabled" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:200:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17436:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest may have watchers that omit the listener function" time="0.001" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:98:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17334:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest correcly handles NanNs" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:220:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17456:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
-  <testcase name="digest triggers chained watchers in the same digest" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest">
-    <failure type="">TypeError: Scope.$$watchers is undefined in /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js (line 17228)
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/src/scope.js"]&lt;/Scope.prototype.$watch@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/src/scope.js:13:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17228:5
-require&lt;["/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js"]&lt;/&lt;/&lt;@/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/test/scope_spec.js:109:1 &lt;- /var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/83cb6bd3a6d4b27d42c837420068639b.browserify.js:17345:15
-&lt;Jasmine&gt;
-</failure>
-  </testcase>
+  <testcase name="digest calls listener with new value as old value the first time" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest may have watchers that omit the listener function" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest triggers chained watchers in the same digest" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest gives up on the watches after 10 iterations" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest calls the listener function of a watch on first $digest" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest calls the watch function with the scope as the argument" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest calls listener when watch value is first undefined" time="0.001" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
+  <testcase name="digest calls the listener function when watched value changes" time="0" classname="Firefox_109_0_(Mac_OS_10_15).digest"/>
   <system-out>
     <![CDATA[
 ]]>
