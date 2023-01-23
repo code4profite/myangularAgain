@@ -99,11 +99,14 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 <div class="alert">
 
 
+<!-- <span class="failingAlert bar">Failed 9 specs</span> -->
+<span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
+  <a href="#" onclick="unfold();">Unfold</a></span>12 specs, 9 failed, 0 pending</span>
+<span class="resultsMenu bar">
+<a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
+   class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
+</span>
 
-  
-  <span class="passingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>11 specs, 0 failed, 0 pending</span>
-  
 
 
 </div>
@@ -114,6 +117,55 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   
+    <div class="suite failed">
+      <span class="description">digest</span>
+    
+      <div class="specSummary failed">
+      <span class="description">does not end digest so that new watches are not run</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">compares based on value if enabled</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls the listener function of a watch on first $digest</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls the watch function with the scope as the argument</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">ends the digest when the last watch is clean</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls the listener function when watched value changes</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls listener when watch value is first undefined</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">gives up on the watches after 10 iterations</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">calls listener with new value as old value the first time</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">triggers chained watchers in the same digest</span>
+      </div>
+    
+      <div class="specSummary failed">
+      <span class="description">may have watchers that omit the listener function</span>
+      </div>
+    
+    </div>
+  
     <div class="suite passed">
       <span class="description">Scope</span>
     
@@ -123,55 +175,75 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     
     </div>
   
-    <div class="suite passed">
-      <span class="description">digest</span>
-    
-      <div class="specSummary passed">
-      <span class="description">calls the listener function of a watch on first $digest</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">calls the watch function with the scope as the argument</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">calls the listener function when watched value changes</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">calls listener when watch value is first undefined</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">calls listener with new value as old value the first time</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">does not end digest so that new watches are not run</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">may have watchers that omit the listener function</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">triggers chained watchers in the same digest</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">gives up on the watches after 10 iterations</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">ends the digest when the last watch is clean</span>
-      </div>
-    
-    </div>
-  
   
 </div>
 
 <div id="details">
+  
+  
+  <div class="specDetail failed">
+    <span class="description">digest does not end digest so that new watches are not run</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls the listener function of a watch on first $digest</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls the watch function with the scope as the argument</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest ends the digest when the last watch is clean</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls the listener function when watched value changes</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls listener when watch value is first undefined</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest calls listener with new value as old value the first time</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest triggers chained watchers in the same digest</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
+  <div class="specDetail failed">
+    <span class="description">digest may have watchers that omit the listener function</span>
+    <div class="stackTrace">
+      <div class="resultMessage">10 digest iterations reached thrown</div>
+    </div>
+  </div>
+  
   
 </div>
 
@@ -184,7 +256,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    
+    case 50: showFailures(); break;
   }
 };
 

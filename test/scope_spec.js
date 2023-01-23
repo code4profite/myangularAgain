@@ -192,7 +192,7 @@ describe('digest',function(){
         expect(scope.counter).toBe(1);
 
     });
-/*
+
     it('compares based on value if enabled',function(){
         scope.aValue = [1,2,3];
         scope.counter = 0;
@@ -212,7 +212,7 @@ describe('digest',function(){
         scope.$digest();
         expect(scope.counter).toBe(2);
     });
-
+/*
     it('correcly handles NanNs',function(){
         scope.number = 0/0;
         scope.counter = 0;
