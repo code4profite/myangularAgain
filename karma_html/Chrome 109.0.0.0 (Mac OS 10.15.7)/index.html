@@ -102,7 +102,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 
   
   <span class="passingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>10 specs, 0 failed, 0 pending</span>
+  <a href="#" onclick="unfold();">Unfold</a></span>11 specs, 0 failed, 0 pending</span>
   
 
 
@@ -115,22 +115,39 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
     <div class="suite passed">
+      <span class="description">Scope</span>
+    
+      <div class="specSummary passed">
+      <span class="description">can be constructed and used as an object</span>
+      </div>
+    
+    </div>
+  
+    <div class="suite passed">
       <span class="description">digest</span>
-    
-      <div class="specSummary passed">
-      <span class="description">may have watchers that omit the listener function</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">calls listener with new value as old value the first time</span>
-      </div>
     
       <div class="specSummary passed">
       <span class="description">calls the listener function when watched value changes</span>
       </div>
     
       <div class="specSummary passed">
+      <span class="description">gives up on the watches after 10 iterations</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">ends the digest when the last watch is clean</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">does not end digest so that new watches are not run</span>
+      </div>
+    
+      <div class="specSummary passed">
       <span class="description">calls listener when watch value is first undefined</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls listener with new value as old value the first time</span>
       </div>
     
       <div class="specSummary passed">
@@ -142,24 +159,11 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
       </div>
     
       <div class="specSummary passed">
-      <span class="description">ends the digest when the last watch is clean</span>
-      </div>
-    
-      <div class="specSummary passed">
-      <span class="description">gives up on the watches after 10 iterations</span>
+      <span class="description">may have watchers that omit the listener function</span>
       </div>
     
       <div class="specSummary passed">
       <span class="description">triggers chained watchers in the same digest</span>
-      </div>
-    
-    </div>
-  
-    <div class="suite passed">
-      <span class="description">Scope</span>
-    
-      <div class="specSummary passed">
-      <span class="description">can be constructed and used as an object</span>
       </div>
     
     </div>

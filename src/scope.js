@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 function Scope() {
     this.$$watchers = [];
-    this.$$lastDirtyValue = null;
+    this.$$lastDirtyWatch = null;
 }
 module.exports = Scope;
 
@@ -15,6 +15,7 @@ Scope.prototype.$watch = function (watchFn,listenerFn) {
         last : initWatchVal
     };
     this.$$watchers.push(watcher);
+    this.$$lastDirtyWatch = null;
 };
 
 Scope.prototype.$$digestOnce = function () {
@@ -24,14 +25,14 @@ Scope.prototype.$$digestOnce = function () {
         newValue = watcher.watchFn(self);
         oldValue = watcher.last;
         if(oldValue !==newValue) {
-            self.$$lastDirtyValue = watcher;
+            self.$$lastDirtyWatch = watcher;
             watcher.last = newValue;
             watcher.listenerFn(newValue,
                 oldValue === initWatchVal ? newValue : oldValue,self);
             dirty = true;
         }
-        else if (self.$$lastDirtyValue == watcher){
-            return false;
+        else if (self.$$lastDirtyWatch == watcher){
+            return false;s
         }
     });
     return dirty;
@@ -39,7 +40,7 @@ Scope.prototype.$$digestOnce = function () {
 
 Scope.prototype.$digest = function () {
     var dirty, ttl=10;
-    this.$$lastDirtyValue = null;
+    this.$$lastDirtyWatch = null;
     do{
         dirty = this.$$digestOnce();
         if(dirty && !(ttl--)){

@@ -171,7 +171,7 @@ describe('digest',function(){
         scope.$digest();
         expect(watchExecutions).toBe(301);
     });
-/*
+
     it('does not end digest so that new watches are not run',function(){
         scope.aValue = 'abc';
         scope.counter= 0;
@@ -192,7 +192,7 @@ describe('digest',function(){
         expect(scope.counter).toBe(1);
 
     });
-
+/*
     it('compares based on value if enabled',function(){
         scope.aValue = [1,2,3];
         scope.counter = 0;
