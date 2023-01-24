@@ -25,17 +25,21 @@ Scope.prototype.$$digestOnce = function () {
     var newValue, oldValue, dirty;
     var self = this;
     _.forEach(this.$$watchers,function (watcher) {
-        newValue = watcher.watchFn(self);
-        oldValue = watcher.last;
-        if(!self.$$areEqual(newValue,oldValue,watcher.valueEq)) {
-            self.$$lastDirtyWatch = watcher;
-            watcher.last = (watcher.valueEq)?_.cloneDeep(newValue):newValue;
-            watcher.listenerFn(newValue,
-                oldValue === initWatchVal ? newValue : oldValue,self);
-            dirty = true;
-        }
-        else if (self.$$lastDirtyWatch == watcher){
-            return false;
+        try {
+            newValue = watcher.watchFn(self);
+            oldValue = watcher.last;
+            if(!self.$$areEqual(newValue,oldValue,watcher.valueEq)) {
+                self.$$lastDirtyWatch = watcher;
+                watcher.last = (watcher.valueEq)?_.cloneDeep(newValue):newValue;
+                watcher.listenerFn(newValue,
+                    oldValue === initWatchVal ? newValue : oldValue,self);
+                dirty = true;
+            }
+            else if (self.$$lastDirtyWatch == watcher){
+                return false;
+            }
+        } catch (e) {
+            console.log(e)
         }
     });
     return dirty;
@@ -57,6 +61,6 @@ Scope.prototype.$$areEqual = function(newValue,oldValue,valueEq){
         return _.isEqual(newValue,oldValue);
     } else {
         return newValue === oldValue || (typeof newValue === 'number' && typeof oldValue === 'number'
-        && isNaN(oldValue) && isNan(newValue)); 
+        && isNaN(oldValue) && isNaN(newValue)); 
     }
 };

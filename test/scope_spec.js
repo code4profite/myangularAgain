@@ -230,7 +230,7 @@ describe('digest',function(){
         scope.$digest();
         expect(scope.counter).toBe(1);
     });
-/*  
+
     it('catches exceptions in watch function and continues',function(){
         scope.aValue='abc';
         scope.counter = 0;
