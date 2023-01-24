@@ -94,14 +94,14 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </head>
 
 <body id="HTMLReporter" class="html-reporter">
-<h1>Tested in Firefox 109.0 (Mac OS 10.15) on Mon Jan 23 2023</h1>
+<h1>Tested in Firefox 109.0 (Mac OS 10.15) on Tue Jan 24 2023</h1>
 
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 9 specs</span> -->
+<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
 <span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>12 specs, 9 failed, 0 pending</span>
+  <a href="#" onclick="unfold();">Unfold</a></span>13 specs, 1 failed, 0 pending</span>
 <span class="resultsMenu bar">
 <a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
    class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
@@ -117,60 +117,64 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   
+    <div class="suite passed">
+      <span class="description">Scope</span>
+    
+      <div class="specSummary passed">
+      <span class="description">can be constructed and used as an object</span>
+      </div>
+    
+    </div>
+  
     <div class="suite failed">
       <span class="description">digest</span>
     
-      <div class="specSummary failed">
+      <div class="specSummary passed">
+      <span class="description">calls the watch function with the scope as the argument</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls the listener function of a watch on first $digest</span>
+      </div>
+    
+      <div class="specSummary passed">
       <span class="description">does not end digest so that new watches are not run</span>
+      </div>
+    
+      <div class="specSummary passed">
+      <span class="description">calls listener with new value as old value the first time</span>
       </div>
     
       <div class="specSummary passed">
       <span class="description">compares based on value if enabled</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">calls the listener function of a watch on first $digest</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the watch function with the scope as the argument</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">ends the digest when the last watch is clean</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls the listener function when watched value changes</span>
-      </div>
-    
-      <div class="specSummary failed">
-      <span class="description">calls listener when watch value is first undefined</span>
-      </div>
-    
       <div class="specSummary passed">
       <span class="description">gives up on the watches after 10 iterations</span>
       </div>
     
-      <div class="specSummary failed">
-      <span class="description">calls listener with new value as old value the first time</span>
+      <div class="specSummary passed">
+      <span class="description">calls listener when watch value is first undefined</span>
       </div>
     
       <div class="specSummary failed">
-      <span class="description">triggers chained watchers in the same digest</span>
+      <span class="description">correcly handles NanNs</span>
       </div>
     
-      <div class="specSummary failed">
+      <div class="specSummary passed">
+      <span class="description">calls the listener function when watched value changes</span>
+      </div>
+    
+      <div class="specSummary passed">
       <span class="description">may have watchers that omit the listener function</span>
       </div>
     
-    </div>
-  
-    <div class="suite passed">
-      <span class="description">Scope</span>
+      <div class="specSummary passed">
+      <span class="description">ends the digest when the last watch is clean</span>
+      </div>
     
       <div class="specSummary passed">
-      <span class="description">can be constructed and used as an object</span>
+      <span class="description">triggers chained watchers in the same digest</span>
       </div>
     
     </div>
@@ -182,65 +186,17 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
   <div class="specDetail failed">
-    <span class="description">digest does not end digest so that new watches are not run</span>
+    <span class="description">digest correcly handles NanNs</span>
     <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the listener function of a watch on first $digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the watch function with the scope as the argument</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest ends the digest when the last watch is clean</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls the listener function when watched value changes</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls listener when watch value is first undefined</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest calls listener with new value as old value the first time</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest triggers chained watchers in the same digest</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
-    </div>
-  </div>
-  
-  <div class="specDetail failed">
-    <span class="description">digest may have watchers that omit the listener function</span>
-    <div class="stackTrace">
-      <div class="resultMessage">10 digest iterations reached thrown</div>
+      <div class="resultMessage">ReferenceError: isNan is not defined in http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4 (line 17275)
+require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$$areEqual@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:17275:12
+require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$$digestOnce/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:17245:18
+arrayEach@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:532:19
+forEach@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:9412:14
+require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$$digestOnce@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:17242:7
+require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/src/scope.js&quot;]&lt;/Scope.prototype.$digest@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:17263:22
+require&lt;[&quot;/Users/sheratsuki/Desktop/myangularAgain/test/scope_spec.js&quot;]&lt;/&lt;/&lt;@http://localhost:9876/absolute/var/folders/02/md3smr3n7sgfpp80dl0ymyq40000gn/T/590e4e27769bf0fedac448cd25c0122e.browserify.js?4c4b7e0e5d509c94238bce048828fa177d4871d4:17505:15
+&lt;Jasmine&gt;</div>
     </div>
   </div>
   

@@ -212,7 +212,7 @@ describe('digest',function(){
         scope.$digest();
         expect(scope.counter).toBe(2);
     });
-/*
+
     it('correcly handles NanNs',function(){
         scope.number = 0/0;
         scope.counter = 0;
@@ -230,7 +230,7 @@ describe('digest',function(){
         scope.$digest();
         expect(scope.counter).toBe(1);
     });
-    
+/*  
     it('catches exceptions in watch function and continues',function(){
         scope.aValue='abc';
         scope.counter = 0;
@@ -268,7 +268,7 @@ describe('digest',function(){
         expect(scope.counter).toBe(1);
 
     });
-
+/*
     it('allows destroying a $watch with a removal function',function(){
         scope.aValue = 'abc';
         scope.counter = 0;

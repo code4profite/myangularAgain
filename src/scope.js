@@ -1,14 +1,14 @@
 'use strict';
 var _ = require('lodash');
 
-function initWatchVal (){}
-
 function Scope() {
     this.$$watchers = [];
     this.$$lastDirtyWatch = null;
 }
 
 module.exports = Scope;
+
+function initWatchVal (){}
 
 Scope.prototype.$watch = function (watchFn,listenerFn,valueEq) {
     var watcher = {
@@ -29,7 +29,7 @@ Scope.prototype.$$digestOnce = function () {
         oldValue = watcher.last;
         if(!self.$$areEqual(newValue,oldValue,watcher.valueEq)) {
             self.$$lastDirtyWatch = watcher;
-            watcher.last = (watcher.valueEq)?_.cloneDeep(newValue):oldValue;
+            watcher.last = (watcher.valueEq)?_.cloneDeep(newValue):newValue;
             watcher.listenerFn(newValue,
                 oldValue === initWatchVal ? newValue : oldValue,self);
             dirty = true;
@@ -56,6 +56,7 @@ Scope.prototype.$$areEqual = function(newValue,oldValue,valueEq){
     if(valueEq){
         return _.isEqual(newValue,oldValue);
     } else {
-        return newValue === oldValue; 
+        return newValue === oldValue || (typeof newValue === 'number' && typeof oldValue === 'number'
+        && isNaN(oldValue) && isNan(newValue)); 
     }
 };
