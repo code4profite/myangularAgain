@@ -11,6 +11,7 @@ describe('Scope',function(){
     });
 });
 /**/
+
 describe('digest',function(){
 
     var scope;
@@ -18,6 +19,8 @@ describe('digest',function(){
     beforeEach(function () {
         scope = new Scope();
     });
+
+//*
 
     it('calls the listener function of a watch on first $digest',function(){
         var watchFn = function() { return 'wat';};
@@ -268,7 +271,7 @@ describe('digest',function(){
         expect(scope.counter).toBe(1);
 
     });
-/*
+
     it('allows destroying a $watch with a removal function',function(){
         scope.aValue = 'abc';
         scope.counter = 0;
@@ -290,7 +293,7 @@ describe('digest',function(){
         scope.$digest();
         expect(scope.counter).toBe(2);
     });
-    
+
     it('allows destroying a $watch during digest',function(){
         scope.aValue = 'abc';
 
@@ -299,7 +302,7 @@ describe('digest',function(){
         scope.$watch(
             function(scope){
                 watchCalls.push('first');
-                //console.log("\n push first \n");
+                //console.log("push first");
                 return scope.aValue;
             }
         );
@@ -307,7 +310,7 @@ describe('digest',function(){
         var destroyWatch = scope.$watch(
             function(scope){
                 watchCalls.push('second');
-                //console.log("\n push second \n");
+                //console.log("push second");
                 destroyWatch();
             }
         );
@@ -315,7 +318,7 @@ describe('digest',function(){
         scope.$watch(
             function(scope){
                 watchCalls.push('third');
-                //console.log("\n push third \n");
+                //console.log("push third");
                 return scope.aValue;
             }
         );
@@ -323,7 +326,7 @@ describe('digest',function(){
         scope.$digest();
         expect(watchCalls).toEqual(['first','second','third','first','third']);
     });
-
+   
     it('allows a $watch to destroy another during digest',function(){
         scope.aValue = 'abc';
         scope.counter = 0;

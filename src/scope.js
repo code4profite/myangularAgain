@@ -11,21 +11,30 @@ module.exports = Scope;
 function initWatchVal (){}
 
 Scope.prototype.$watch = function (watchFn,listenerFn,valueEq) {
+    var self = this;
     var watcher = {
         watchFn:watchFn,
         listenerFn:listenerFn || function(){},
-        valueEq: !!valueEq,
-        last : initWatchVal
+        last : initWatchVal,
+        valueEq: !!valueEq
     };
-    this.$$watchers.push(watcher);
+    this.$$watchers.unshift(watcher);
     this.$$lastDirtyWatch = null;
+    return function(){
+        var index = self.$$watchers.indexOf(watcher);
+        if(index>=0){
+            self.$$watchers.splice(index,1);
+            self.$$lastDirtyWatch = null;
+        }
+    };
 };
 
 Scope.prototype.$$digestOnce = function () {
     var newValue, oldValue, dirty;
     var self = this;
-    _.forEach(this.$$watchers,function (watcher) {
+    _.forEachRight(this.$$watchers,function (watcher) {
         try {
+            //console.log(newValue);
             newValue = watcher.watchFn(self);
             oldValue = watcher.last;
             if(!self.$$areEqual(newValue,oldValue,watcher.valueEq)) {
@@ -39,7 +48,7 @@ Scope.prototype.$$digestOnce = function () {
                 return false;
             }
         } catch (e) {
-            console.log(e)
+            console.log(e);
         }
     });
     return dirty;
@@ -60,7 +69,7 @@ Scope.prototype.$$areEqual = function(newValue,oldValue,valueEq){
     if(valueEq){
         return _.isEqual(newValue,oldValue);
     } else {
-        return newValue === oldValue || (typeof newValue === 'number' && typeof oldValue === 'number'
-        && isNaN(oldValue) && isNaN(newValue)); 
+        return newValue === oldValue || (typeof newValue === 'number' && typeof oldValue === 'number' && 
+        isNaN(oldValue) && isNaN(newValue)); 
     }
 };
